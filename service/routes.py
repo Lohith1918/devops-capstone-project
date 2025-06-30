@@ -8,6 +8,8 @@ from flask import jsonify, request, make_response, abort, url_for   # noqa; F401
 from service.models import Account
 from service.common import status  # HTTP Status Codes
 from . import app  # Import Flask application
+from tests.factories import AccountFactory  # for generating test account data
+BASE_URL = "/accounts"                     # for reuse in test routes
 
 
 ############################################################
